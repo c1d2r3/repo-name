@@ -17,7 +17,31 @@
  </head>
  <h1>
  <body>
+ 
+
   <p weight="100" class="stroke">N9S7K3 </p>
+  
+  <font color="red" face="trebuchet ms,lucida console" >
+  <script type="text/javascript">
+function getDate()
+{
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    //По надобности условие ниже повторить с minutes и hours
+    if(seconds < 10)
+    {
+        seconds = '0' + seconds;
+    }
+    document.getElementById('timedisplay').innerHTML = hours + ':' + minutes + ':' + seconds;
+}
+setInterval(getDate, 0);
+</script>
+<div id="timedisplay"></div>
+  
+  </font>
+  
  </body>
 </html>
  </h1>
